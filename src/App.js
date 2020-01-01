@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import time from './images/time.jpg'
 
 const leftPad = (width, n) => {
   if ((n + '').length > width) {
@@ -51,7 +52,7 @@ class App extends React.Component {
   render() {
     const {isRunning, lapTimes, timeElapsed} = this.state;
     return (
-      <div>
+      <div style={{backgroundImage: 'url(${time})'}}>
         <TimeElapsed id="timer" timeElapsed={timeElapsed} />
         <button onClick={this.toggle}>
           {isRunning ? 'Stop' : 'Start'}
