@@ -14,6 +14,21 @@ const leftPad = (width, n) => {
 
 
 class App extends React.Component {
+	componentDidMount () {
+    // Include the Crisp code here, without the <script></script> tags
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "YOUR_WEBSITE_ID";
+
+    (function() {
+      var d = document;
+      var s = d.createElement("script");
+
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+   };
+  }
   constructor(props) {
     super(props);
     
@@ -52,6 +67,16 @@ class App extends React.Component {
   render() {
     const {isRunning, lapTimes, timeElapsed} = this.state;
     return (
+	    <Router>
+          <Route path="/" component={LogPageView} />
+          <div className="content">
+            <PageWrapper>
+              <Header title="Site Title" />
+              <Routes />
+              <Footer />
+            </PageWrapper>
+          </div>
+      </Router>
       
       <div style={{color:'white'}}>
         <h2>Timsy Stopwatch</h2>
