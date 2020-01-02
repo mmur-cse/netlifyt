@@ -79,7 +79,7 @@ class App extends React.Component {
           onClick={isRunning ? this.lap : this.reset}
           disabled={!isRunning && !timeElapsed}
          >
-          {isRunning || !timeElapsed ? 'Lap' : 'Reset'}
+          {'Lap' }
         </button>
         {lapTimes.length > 0 && <LapTimes lapTimes={lapTimes} />}
 	     
