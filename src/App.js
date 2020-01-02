@@ -67,16 +67,7 @@ class App extends React.Component {
   render() {
     const {isRunning, lapTimes, timeElapsed} = this.state;
     return (
-	    <Router>
-          <Route path="/" component={LogPageView} />
-          <div className="content">
-            <PageWrapper>
-              <Header title="Site Title" />
-              <Routes />
-              <Footer />
-            </PageWrapper>
-          </div>
-      </Router>
+	    
       
       <div style={{color:'white'}}>
         <h2>Timsy Stopwatch</h2>
@@ -91,6 +82,7 @@ class App extends React.Component {
           {isRunning || !timeElapsed ? 'Lap' : 'Reset'}
         </button>
         {lapTimes.length > 0 && <LapTimes lapTimes={lapTimes} />}
+	     <Route path="/" component={LogPageView} />
 	    <footer id="footer"><p id="copyright">&copy; Maryam Corporate </p></footer>
       </div>
       
