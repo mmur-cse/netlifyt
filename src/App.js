@@ -53,7 +53,7 @@ class App extends React.Component {
     const {isRunning, lapTimes, timeElapsed} = this.state;
     return (
       
-      <div>
+      <div style={{color:'white'}}>
         <h1>Timsy Stopwatch</h1>
         <TimeElapsed id="timer" timeElapsed={timeElapsed} />
         <button onClick={this.toggle}>
