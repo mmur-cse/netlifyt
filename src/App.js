@@ -54,7 +54,7 @@ class App extends React.Component {
     return (
       
       <div style={{color:'white'}}>
-        <h1>Timsy Stopwatch</h1>
+        <h3>Timsy Stopwatch</h3>
         <TimeElapsed id="timer" timeElapsed={timeElapsed} />
         <button onClick={this.toggle}>
           {isRunning ? 'Stop' : 'Start'}
@@ -66,6 +66,7 @@ class App extends React.Component {
           {isRunning || !timeElapsed ? 'Lap' : 'Reset'}
         </button>
         {lapTimes.length > 0 && <LapTimes lapTimes={lapTimes} />}
+	    <footer id="footer"><p id="copyright">&copy; Maryam Corporate </p></footer>
       </div>
       
     );
