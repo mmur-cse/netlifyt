@@ -82,7 +82,7 @@ class App extends React.Component {
           {isRunning || !timeElapsed ? 'Lap' : 'Reset'}
         </button>
         {lapTimes.length > 0 && <LapTimes lapTimes={lapTimes} />}
-	     <Route path="/" component={LogPageView} />
+	     
 	    <footer id="footer"><p id="copyright">&copy; Maryam Corporate </p></footer>
       </div>
       
