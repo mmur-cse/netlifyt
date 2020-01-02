@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import time from './images/time.jpg'
+
 
 const leftPad = (width, n) => {
   if ((n + '').length > width) {
