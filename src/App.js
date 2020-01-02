@@ -72,7 +72,7 @@ class App extends React.Component {
       <div style={{color:'white'}}>
         <h2>Timsy Stopwatch</h2>
         <TimeElapsed id="timer" timeElapsed={timeElapsed} />
-        <button onClick={this.toggle}>
+        <button onClick={!isRunning  && timeElapsed ? this.reset : this.toggle}>
           {isRunning ? 'Stop' : 'Start'}
         </button>
         <button
