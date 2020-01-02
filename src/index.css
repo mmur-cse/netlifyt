@@ -3,8 +3,16 @@ code {
     monospace;
 }
 body { 
-  
+  margin: 0;
   font-family: monospace; 
+  background-image: url('./images/time.jpg');
+background-size: cover;
+background-position: center center;
+position: relative;
+top:0;
+bottom:0;
+height: 100vh;
+z-index:-10; 
 }
 
 button { 
@@ -17,4 +25,10 @@ button {
 #timer {
   font-size: 1.45em;
   font-weight: 100;
+}
+#root{
+  
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
 }

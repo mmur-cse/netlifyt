@@ -52,7 +52,9 @@ class App extends React.Component {
   render() {
     const {isRunning, lapTimes, timeElapsed} = this.state;
     return (
-      <div style={{backgroundImage: 'url(${time})'}}>
+      
+      <div>
+        <h1>Timsy Stopwatch</h1>
         <TimeElapsed id="timer" timeElapsed={timeElapsed} />
         <button onClick={this.toggle}>
           {isRunning ? 'Stop' : 'Start'}
@@ -65,6 +67,7 @@ class App extends React.Component {
         </button>
         {lapTimes.length > 0 && <LapTimes lapTimes={lapTimes} />}
       </div>
+      
     );
   }
 }
