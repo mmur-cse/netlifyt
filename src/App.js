@@ -28,7 +28,7 @@ class App extends React.Component {
       d.getElementsByTagName("head")[0].appendChild(s);
     })();
    };
-  }
+  
   constructor(props) {
     super(props);
     
