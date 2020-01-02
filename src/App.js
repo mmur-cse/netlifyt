@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 
-import Route from 'react-router-dom';
+
 const leftPad = (width, n) => {
   if ((n + '').length > width) {
 	  return n;
